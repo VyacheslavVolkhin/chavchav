@@ -20,6 +20,24 @@ $(document).ready(function(){
 	  return this;
 	};
 
+
+    //animation
+    var sTop = $(window).scrollTop() + $(window).innerHeight();
+    $('.item-animation').each(function () {
+        if ($(this).offset().top < sTop) {
+            $(this).addClass('item-active')
+        }
+    })
+
+    $(window).scroll(function () {
+        var sTop = $(window).scrollTop() + $(window).innerHeight();
+        $('.item-animation').each(function () {
+            if ($(this).offset().top < sTop) {
+                $(this).addClass('item-active')
+            }
+        })
+    });
+
     //swipebox
     if (!!$('[data-swipebox]').offset()) {
         $('[data-swipebox]').swipebox();
