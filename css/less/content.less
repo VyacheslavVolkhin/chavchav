@@ -1,6 +1,9 @@
 /* ----------------------------------- *\
 			content styles
 \* ----------------------------------- */
+.text-box {
+    margin-bottom: 30px;
+}
 .form-box {
     .frm-field-info {
         font-size: 14px;
@@ -269,15 +272,17 @@
         }
     }
     .info-inner-wrap {
-        padding: 30px;
+        padding: 30px 0 30px 0;
         background: #fff;
         position: relative;
         z-index: 2;
+        font-size: 16opx;
+        letter-spacing: 0.44px;
     }
     .title-inner-wrap {
         position: relative;
-        padding: 112px 30px 24px 30px;
-        margin-top: -84px;
+        padding: 22px 30px 24px 30px;
+        //margin-top: -84px;
         &:before {
             content: "";
             display: block;
@@ -355,18 +360,108 @@
 }
 .card-info-box {
     margin-bottom: 30px;
+    padding-bottom: 17px;
+    position: relative;
     font-size: 14px;
     line-height: 130%;
     letter-spacing: 0.25px;
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background-color: var(--clr-att-border);
+    }
     * {
         .ft;
     }
 }
 .card-box {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     display: flex;
     flex-direction: column;
+    .actions-panel-wrap {
+        margin-bottom: 16px;
+        border-radius: 15px;
+        border: 1px solid #CB9975;
+        padding: 29px 26px;
+    }
+    .panel-cart-wrap {
+        display: flex;
+        align-items: center;
+        .panel-count {
+            width: 105px;
+            flex-shrink: 0;
+            padding: 0 15px 0 0;
+        }
+        .panel-button {
+            flex: 1;
+            .btn {
+                width: 100%;
+                height: 44px;padding: 0 29px;
+                border-radius: 15px;
+                font-size: 16px;
+                letter-spacing: 1px;
+                .button-ico {
+                    width: 24px;
+                    height: 24px;
+                    margin: 0 6px 0 0;
+                    filter: brightness(0) invert(1);
+                }
+            }
+        }
+    }
+    .panel-size-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+        flex-wrap: wrap;
+        .panel-title {
+            flex-shrink: 0;
+            padding: 0 10px 0 0;
+            letter-spacing: 0.44px;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+        }
+        .panel-field {
+            flex-shrink: 0;
+            font-size: 16px;
+        }
+    }
+    .panel-price-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        border-bottom: 2px solid var(--clr-att-border);
+        padding-bottom: 18px;
+        margin-bottom: 15px;
+        .elm-price {
+            &:not(.price-old) {
+                font-size: 34px;
+                font-weight: bold;
+                letter-spacing: 0.01em;
+                margin-top: 4px;
+                &:after {
+                    font-size: 24px;
+                    line-height: 32px;
+                    font-weight: 400;
+                }
+            }
+            &.price-old {
+                font-size: 16px;
+                line-height: 1.3;
+                letter-spacing: 0.44px;
+                margin-left: 10px;
+            }
+        }
+    }
     .photos-inner-wrap {
+        position: relative;
         margin-bottom: 15px;
         order: 1;
         width: 100%;
@@ -382,7 +477,7 @@
         color: var(--clr-title);
     }
     .art-wrap {
-        margin-bottom: 24px;
+        margin-bottom: 15px;
         font-size: 16px;
         letter-spacing: 0.44px;
     }
@@ -449,6 +544,13 @@
                 opacity: 0;
             }
         }
+    }
+    .elm-sticker {
+        z-index: 5;
+        position: absolute;
+        top: 17px;
+        right: 10px;
+        pointer-events: none;
     }
     .elm-price {
         font-size: 24px;
@@ -1133,7 +1235,8 @@
             position: relative;
             z-index: 3;
             background: #fff;
-            padding-bottom: 6.6rem;
+            margin-bottom: 30px;
+            padding-bottom: 0;
             .title-decor {
                 &:after {
                     content: "";
@@ -1149,30 +1252,40 @@
         }
         .box-outer-wrap {
             position: relative;
-            padding-bottom: 4.2rem;
-            margin-bottom: 5rem;
+            padding-bottom: 0;
+            margin-bottom: 37px;
         }
         .box-inner-wrap {
-            display: flex;
+            //display: flex;
+            display: block;
             position: static;
             margin-bottom: 0;
+            padding: 0 0 0 34px;
         }
         .title-inner-wrap {
-            width: 51%;
-            padding: 5.4rem 3rem 1.6rem 34px;
+            width: 100%;
+            padding: 3rem 0 3rem 0;
             position: static;
             order: 1;
             margin: 0;
             &:before {
-                top: 0;
+                left: -9999px;
+                right: -9999px;
+                width: auto;
+                margin: 0;
+                transform: none;
             }
         }
         .info-inner-wrap {
-            width: 49%;
+            //width: 49%;
+            width: 100%;
+            max-width: (1200/20em);
             flex-shrink: 0;
-            margin: -10rem 0 0 0;
+            //margin: -10rem 0 0 0;
             order: 2;
             z-index: 4;
+            padding: 0;
+            margin: 0 0 3rem 0;
         }
     }
     .title-box {
@@ -1214,6 +1327,12 @@
     }
 }
 @media (min-width: 1024px) {
+    .text-box {
+        margin-bottom: 6rem;
+        padding-left: 10.2rem;
+        padding-right: 10.2rem;
+        line-height: 1.35;
+    }
     .side-menu-box {
         border-radius: 15px;
         margin-bottom: 9rem;
@@ -1286,15 +1405,16 @@
             padding-right: 10.2rem;
         }
         .title-inner-wrap {
-            padding-left: 10.2rem;
         }
         .box-inner-wrap {
             font-size: 1em;
             letter-spacing: inherit;
             line-height: 1.35;
+            padding-left: 10.2rem;
         }
         .info-inner-wrap {
-            padding: 30px 8rem;
+            //padding: 30px 8rem;
+            padding: 0 0 0 0;
         }
         .about-title {
             font-size: 3.4rem;
@@ -1320,7 +1440,7 @@
     }
     .pays-box {
         .item-wrap {
-            width: 20%;
+            width: 25%;
         }
     }
     .about-info-box {
@@ -1354,15 +1474,45 @@
         margin-bottom: 9rem;
     }
     .card-info-box {
-        padding: 5rem 10rem;
+        //padding: 5rem 10rem;
+        //margin-bottom: 30px;
+        //font-size: 2rem;
+        //line-height: 135%;
+        //letter-spacing: 1px;
+        font-size: 16px;
+        line-height: 1.3;
+        letter-spacing: 0.44px;
         margin-bottom: 30px;
-        font-size: 2rem;
-        line-height: 135%;
-        letter-spacing: 1px;
+        padding: 0 0 30px 0;
     }
     .card-box {
         padding-top: 2rem;
         margin-bottom: 3rem;
+        .elm-sticker {
+            top: 37px;
+            right: 30px;
+        }
+        .actions-panel-wrap {
+            margin-bottom: 3rem;
+        }
+        .panel-price-wrap {
+            padding-bottom: 3rem;
+            margin-bottom: 3rem;
+        }
+        .panel-size-wrap {
+            margin-bottom: 3rem;
+        }
+        .panel-cart-wrap {
+            justify-content: center;
+            .panel-button {
+                flex: inherit;
+                flex-shrink: 0;
+                width: auto;
+                .btn {
+                    width: auto;
+                }
+            }
+        }
         .info-inner-wrap {
             font-size: 16px;
             letter-spacing: 0.44px;
@@ -1378,7 +1528,7 @@
             margin: 30px 0 15px 0;
         }
         .art-wrap {
-            margin-bottom: 5rem;
+            margin-bottom: 3rem;
         }
         .cart-wrap {
             width: 7rem;

@@ -7,17 +7,26 @@
     <list default="true" id="33c1e436-f245-4d66-b94e-65d1b59486dd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_html/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/_html/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_html/lk-second.html" beforeDir="false" afterPath="$PROJECT_DIR$/_html/lk-second.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_html/lk.html" beforeDir="false" afterPath="$PROJECT_DIR$/_html/lk.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_html/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/_html/order.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_html/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/_html/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_html/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/_html/contacts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_html/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/_html/product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/head.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/less/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/less/style.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/contacts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/less/content.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/less/content.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/less/items.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/less/items.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/less/structura.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/less/structura.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/cart-inner.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/cart-inner.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lk-second.html" beforeDir="false" afterPath="$PROJECT_DIR$/lk-second.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lk.html" beforeDir="false" afterPath="$PROJECT_DIR$/lk.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/order.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/product.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +107,8 @@
       <workItem from="1684900700783" duration="17809000" />
       <workItem from="1685087107760" duration="19224000" />
       <workItem from="1685273586194" duration="1377000" />
-      <workItem from="1685438578374" duration="713000" />
+      <workItem from="1685438578374" duration="2849000" />
+      <workItem from="1685538812897" duration="3573000" />
     </task>
     <servers />
   </component>
